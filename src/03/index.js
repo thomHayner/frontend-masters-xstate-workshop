@@ -4,7 +4,19 @@ const elBox = document.querySelector('#box');
 
 const machine = createMachine({
   // Create your state machine here
-  // ...
+  initial: 'inactive',
+  states: {
+    inactive: {
+      on: {
+        CLICK: 'active'
+      }
+    },
+    active: {
+      on: {
+        CLICK: 'inactive'
+      }
+    }
+  }
 });
 
 // Create a service using interpret(...)
