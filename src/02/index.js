@@ -30,4 +30,5 @@ function send(event) {
 
 elBox.addEventListener('click', () => {
   // Send a click event
+  send('CLICK')
 });
