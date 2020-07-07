@@ -24,7 +24,7 @@ let currentState = machine.initialState;
 
 function send(event) {
   // Determine and update the `currentState`
-
+  currentState = machine.transition(currentState, event)
   elBox.dataset.state = currentState.value;
 }
 
