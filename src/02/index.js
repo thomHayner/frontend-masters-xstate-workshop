@@ -20,7 +20,7 @@ const machine = createMachine({
 });
 
 // Change this to the initial state
-let currentState = machine.initial;
+let currentState = machine.initialState;
 
 function send(event) {
   // Determine and update the `currentState`
